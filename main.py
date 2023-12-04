@@ -1,6 +1,32 @@
 import streamlit as st
+import os
 
 # st.set_page_config(layout="wide")
+ruta_absoluta = os.path.abspath('./src/files/Informe_Raul.pdf')
 
 st.markdown("<h1 style='text-align: center;'>Métodos Numéricos y Optimización 🤘💥</h1>", unsafe_allow_html=True)
-st.markdown("<h3>Calculo de raices</h3><hr style='margin: 5px 0px;'>", unsafe_allow_html=True)
+st.markdown("<h3>Vamos allá!! 🤪</h3><hr style='margin: 5px 0px;'>", unsafe_allow_html=True)
+st.markdown("<h5 style='margin-top: 30px; line-height: 35px'>- Los métodos numéricos y la optimización son pilares fundamentales en la resolución de problemas complejos en diversas áreas. Su importancia radica en la capacidad de proporcionar herramientas eficientes para aproximarse a soluciones precisas en situaciones donde el análisis exacto resulta impracticable. Estas disciplinas no solo facilitan la toma de decisiones informadas en campos como la ingeniería, la ciencia y la economía, sino que también posibilitan la modelización de sistemas complejos y el desarrollo de tecnologías avanzadas -</h5><hr style='margin: 5px 0px;'>", unsafe_allow_html=True)
+st.markdown("<h3>Creado por 🤓</h3>", unsafe_allow_html=True)
+
+with st.container():
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image('./src/img/1.jpg', caption='Esteban Zuluaga (Estudiante UAM)', width=300)
+    with col2:
+        st.image('./src/img/2.png', caption='Fredy Alejandro (Estudiante UAM)', width=340)
+
+st.markdown("<h3>Inspirada por 😎</h3>", unsafe_allow_html=True)
+
+with st.container():
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image('./src/img/3.png', caption='Reinel Tabares (Profesor UAM)', width=300)
+    with col2:
+        st.image('./src/img/4.png', caption='Johan Sebastian (Desarrollador AI)', width=300)
+
+st.markdown("<hr style='margin: 5px 0px;'><h3>Pagina Oficial 💻</h3>", unsafe_allow_html=True)
+st.write("[Métodos Numéricos y Optimización](https://bioaiteamlearning.github.io/Metodos_2023_03_UAM/intro.html)")
+
+st.markdown("<hr style='margin: 5px 0px;'><h3>Manual de usuario 👀</h3>", unsafe_allow_html=True)
+st.markdown(f"<a href='{ruta_absoluta}' target='_blank'>Métodos Numéricos y Optimización 🤘💥</a>", unsafe_allow_html=True)
