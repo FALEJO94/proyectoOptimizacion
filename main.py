@@ -2,11 +2,11 @@ import streamlit as st
 import os
 
 # st.set_page_config(layout="wide")
-ruta_absoluta = os.path.abspath('./src/files/Informe_Raul.pdf')
+ruta_absoluta = os.path.abspath('./src/files/manual_usuario_pt.pdf')
 
 st.markdown("<h1 style='text-align: center;'>Métodos Numéricos y Optimización 🤘💥</h1>", unsafe_allow_html=True)
 st.markdown("<h3>Vamos allá!! 🤪</h3><hr style='margin: 5px 0px;'>", unsafe_allow_html=True)
-st.markdown("<h5 style='margin-top: 30px; line-height: 35px'>- Los métodos numéricos y la optimización son pilares fundamentales en la resolución de problemas complejos en diversas áreas. Su importancia radica en la capacidad de proporcionar herramientas eficientes para aproximarse a soluciones precisas en situaciones donde el análisis exacto resulta impracticable. Estas disciplinas no solo facilitan la toma de decisiones informadas en campos como la ingeniería, la ciencia y la economía, sino que también posibilitan la modelización de sistemas complejos y el desarrollo de tecnologías avanzadas -</h5><hr style='margin: 5px 0px;'>", unsafe_allow_html=True)
+st.markdown("<h5 style='margin-top: 30px; line-height: 35px'>- Bienvenidos a nuestra web. Los métodos numéricos y la optimización son pilares fundamentales en la resolución de problemas complejos en diversas áreas. Su importancia radica en la capacidad de proporcionar herramientas eficientes para aproximarse a soluciones precisas en situaciones donde el análisis exacto resulta impracticable. Estas disciplinas no solo facilitan la toma de decisiones informadas en campos como la ingeniería, la ciencia y la economía, sino que también posibilitan la modelización de sistemas complejos y el desarrollo de tecnologías avanzadas -</h5><h5 style='margin-top: 30px; line-height: 35px'>A continuación encontraremos algunos métodos numéricos y de optimización los cuales son interactivos. Al final de de la web, encontraremos un manual de usuario</h5><hr style='margin: 5px 0px;'>", unsafe_allow_html=True)
 st.markdown("<h3>Creado por 🤓</h3>", unsafe_allow_html=True)
 
 with st.container():
