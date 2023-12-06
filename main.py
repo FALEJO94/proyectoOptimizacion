@@ -2,7 +2,8 @@ import streamlit as st
 import os
 
 # st.set_page_config(layout="wide")
-ruta_absoluta = os.path.abspath('./src/files/manual_usuario_pt.pdf')
+ruta_absoluta = 'https://drive.google.com/file/d/1PspWCEqPO-0NdbRz3zpnkQdMrgmt9UHg/view?usp=drive_link'
+# ruta_absoluta = os.path.abspath('./src/files/manual_usuario_pt.pdf')
 
 st.markdown("<h1 style='text-align: center;'>Métodos Numéricos y Optimización 🤘💥</h1>", unsafe_allow_html=True)
 st.markdown("<h3>Vamos allá!! 🤪</h3><hr style='margin: 5px 0px;'>", unsafe_allow_html=True)
@@ -14,7 +15,7 @@ with st.container():
     with col1:
         st.image('./src/img/1.jpg', caption='Esteban Zuluaga (Estudiante UAM)', width=300)
     with col2:
-        st.image('./src/img/2.png', caption='Fredy Alejandro (Estudiante UAM)', width=340)
+        st.image('./src/img/2.jpg', caption='Fredy Alejandro (Estudiante UAM)', width=340)
 
 st.markdown("<h3>Inspirada por 😎</h3>", unsafe_allow_html=True)
 

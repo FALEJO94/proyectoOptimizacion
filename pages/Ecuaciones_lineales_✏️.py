@@ -4,6 +4,7 @@ import methods.linearEquations as lE
 st.markdown("<h1 style='text-align: center'>Ecuaciones Lineales</h1>", unsafe_allow_html=True)
 st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
 
+st.sidebar.markdown('<h1>Métodos</h1>', unsafe_allow_html=True)
 button_gaussiana = st.sidebar.button('Eliminación Gaussiana')
 button_triangular = st.sidebar.button('Sistema Lineal Triangular Superior')
 button_pivot = st.sidebar.button('Pivoteo')

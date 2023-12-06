@@ -5,8 +5,8 @@ st.markdown("<h1 style='text-align: center'>Ajuste de Curvas e Interpolación</h
 # st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
 st.divider()
 data_file = st.sidebar.file_uploader("Cargar archivo CSV", type=['csv'])
-st.sidebar.divider()
 
+st.sidebar.markdown('<hr style="margin: 5px 0px 0px 0px;"><h1>Métodos</h1>', unsafe_allow_html=True)
 button_square = st.sidebar.button('Mínimos Cuadrados')
 button_lagrange = st.sidebar.button('Interpolación Lagrange')
 button_splines = st.sidebar.button('Splines Cúbicos')

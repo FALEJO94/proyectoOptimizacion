@@ -3,7 +3,7 @@ import methods.rootCalculation as rC
 
 # st.set_page_config(layout="wide")
 
-st.markdown("<h1 style='text-align: center'>Calculo de raices</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center'>Cálculo de raíces</h1>", unsafe_allow_html=True)
 st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
 
 # Definir el rango de entrada

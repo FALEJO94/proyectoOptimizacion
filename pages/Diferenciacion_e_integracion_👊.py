@@ -6,6 +6,8 @@ st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
 
 start_range = st.sidebar.slider("Inicio del rango", -10.0, 10.0, 0.1)
 end_range = st.sidebar.slider("Fin del rango", -10.0, 10.0, 2.0)
+
+st.sidebar.markdown('<hr style="margin: 5px 0px 0px 0px;"><h1>Métodos</h1>', unsafe_allow_html=True)
 button_euler = st.sidebar.button('Euler para Integración Númerica')
 button_trapezoid = st.sidebar.button('Regla Trapezoidal')
 button_mul_trapezoid = st.sidebar.button('Regla Trapezoidal Múltiple')
@@ -36,7 +38,7 @@ with col5:
 st.divider()
 
 if button_euler:
-    st.markdown("<h2>Eliminación Gaussiana</h2>", unsafe_allow_html=True)
+    st.markdown("<h2>Euler para Integración Númerica</h2>", unsafe_allow_html=True)
     st.write(di.eulerMethod(var, func, ti, tf, h, y0))
 
 if button_trapezoid:
@@ -48,9 +50,9 @@ if button_mul_trapezoid:
     st.write(di.multipleTrapezoid(var, func, a, b, start_range, end_range, n))
 
 if button_simpson1:
-    st.markdown("<h2>Regla Trapezoidal Múltiple</h2>", unsafe_allow_html=True)
+    st.markdown("<h2>Regla Simpson 1/3</h2>", unsafe_allow_html=True)
     st.write(di.simpson1_3(var, func, a, b, start_range, end_range))
 
 if button_simpson3:
-    st.markdown("<h2>Regla Trapezoidal Múltiple</h2>", unsafe_allow_html=True)
+    st.markdown("<h2>Regla Simpson 3/8</h2>", unsafe_allow_html=True)
     st.write(di.simpson1_3(var, func, a, b, start_range, end_range))
