@@ -1,7 +1,7 @@
 import streamlit as st
 import methods.linearEquations as lE
 
-st.markdown("<h1 style='text-align: center'>Ecuaciones Lineales</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center'>Ecuaciones Lineales ✏️</h1>", unsafe_allow_html=True)
 st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
 
 st.sidebar.markdown('<h1>Métodos</h1>', unsafe_allow_html=True)
@@ -22,12 +22,15 @@ with col3:
 
 if button_gaussiana:
     st.markdown("<h2>Eliminación Gaussiana</h2>", unsafe_allow_html=True)
-    st.write(lE.gaussiana(matriz, vector, solution))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(lE.gaussiana(matriz, vector, solution))
 
 if button_triangular:
     st.markdown("<h2>Sistema Lineal Triangular Superior</h2>", unsafe_allow_html=True)
-    st.write(lE.linealTriangular(matriz, vector, solution))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(lE.linealTriangular(matriz, vector, solution))
 
 if button_pivot:
     st.markdown("<h2>Pivoteo</h2>", unsafe_allow_html=True)
-    st.write(lE.pivot(matriz, vector, solution))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(lE.pivot(matriz, vector, solution))

@@ -1,8 +1,8 @@
 import streamlit as st
 import methods.ordinaryDifferential as od
 
-st.markdown("<h1 style='text-align: center'>Ecuaciones Diferenciales Ordinarias</h1>", unsafe_allow_html=True)
-st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center'>Ecuaciones Diferenciales Ordinarias 🥵</h2>", unsafe_allow_html=True)
+st.markdown("<h3>Parámetros</h3>", unsafe_allow_html=True)
 
 st.sidebar.markdown('<h1>Métodos</h1>', unsafe_allow_html=True)
 
@@ -46,12 +46,15 @@ with st.expander("Depredador - Presa"):
 
 if button__runge_3:
     st.markdown("<h2>Runge Kutta Orden 3</h2>", unsafe_allow_html=True)
-    st.write(od.rungeKutta3(init_i, init_v, t_range))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(od.rungeKutta3(init_i, init_v, t_range))
 
 if button__runge_4:
     st.markdown("<h2>Runge Kutta Orden 4</h2>", unsafe_allow_html=True)
-    st.write(od.rungeKutta4(init_i, init_v, t_range, r, c, i, v))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(od.rungeKutta4(init_i, init_v, t_range, r, c, i, v))
 
 if button__predator:
     st.markdown("<h2>Depredador - Presa</h2>", unsafe_allow_html=True)
-    st.write(od.predatorPrey(x0, y0, alpha, beta, gamma, delta, h, t0, t_max))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(od.predatorPrey(x0, y0, alpha, beta, gamma, delta, h, t0, t_max))

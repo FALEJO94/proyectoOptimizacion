@@ -1,7 +1,7 @@
 import streamlit as st
 import methods.linearProgramming as lp
 
-st.markdown("<h1 style='text-align: center'>Programación Lineal</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center'>Programación Lineal 🤙</h1>", unsafe_allow_html=True)
 st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
 
 st.sidebar.markdown('<h1>Métodos</h1>', unsafe_allow_html=True)
@@ -38,9 +38,10 @@ with st.expander("Método Gráfico Simplex"):
 
 if button__graphic:
     st.markdown("<h2>Metodo Gráfico Programación Lineal</h2>", unsafe_allow_html=True)
-    with st.spinner('Ejecutando...'):
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
         st.write(lp.graphicalMethod(f, r, v))
 
 if button__simplex:
     st.markdown("<h2>Método Gráfico Simplex</h2>", unsafe_allow_html=True)
-    st.write(lp.simplexMethod(vc, c, ct, s))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(lp.simplexMethod(vc, c, ct, s))

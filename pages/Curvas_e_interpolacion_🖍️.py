@@ -14,16 +14,20 @@ button_polynomial = st.sidebar.button('Regresión Polinomial')
 
 if button_square:
     st.markdown("<h2>Mínimos Cuadrados</h2>", unsafe_allow_html=True)
-    st.write(cI.smallSquares(data_file))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(cI.smallSquares(data_file))
 
 if button_lagrange:
     st.markdown("<h2>Interpolación Lagrange</h2>", unsafe_allow_html=True)
-    st.write(cI.lagrange(data_file))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(cI.lagrange(data_file))
 
 if button_splines:
     st.markdown("<h2>Splines Cúbicos</h2>", unsafe_allow_html=True)
-    st.write(cI.splinesCubics(data_file))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(cI.splinesCubics(data_file))
 
 if button_polynomial:
     st.markdown("<h2>Regresión Polinomial</h2>", unsafe_allow_html=True)
-    st.write(cI.polynomialRegression(data_file))
+    with st.spinner('Espera mientras que la magia hace lo suyo... 💫'):
+        st.write(cI.polynomialRegression(data_file))
