@@ -1,7 +1,7 @@
 import streamlit as st
 import methods.differentiationIntegration as di
 
-st.markdown("<h1 style='text-align: center'>Diferenciación e Integración</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center'>Diferenciación e Integración 👊</h1>", unsafe_allow_html=True)
 st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
 
 start_range = st.sidebar.slider("Inicio del rango", -10.0, 10.0, 0.1)

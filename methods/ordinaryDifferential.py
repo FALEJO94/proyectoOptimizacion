@@ -75,7 +75,7 @@ def rungeKutta3(initial_i, initial_v, tr):
     plt.close(fig1)
 
 ## ----- Runge Kutta 4 
-def func_i(i, v, t):
+def func4_i(i, v, t):
     # Ejemplo: Ecuación diferencial para la corriente i
     R = 1.0  # Resistencia
     L = 0.5  # Inductancia
@@ -116,9 +116,9 @@ def rungeKutta4(initial_i, initial_v, tr, r, c, i, v):
     dt = 0.1 # Paso del tiempo
     initial_conditions = [initial_i, initial_v]
     time_range = (0, tr)
-
+    
     t_values_rk4, [i_values_rk4_system, v_values_rk4_system] = runge_kutta_4_system(
-    [func_i, func_v], initial_conditions, time_range, dt)
+    [func4_i, func4_v], initial_conditions, time_range, dt)
     
     fig_placeholder_i = st.empty() # Espacio reservado para la figura
     fig_placeholder_v = st.empty() # Espacio reservado para la figura

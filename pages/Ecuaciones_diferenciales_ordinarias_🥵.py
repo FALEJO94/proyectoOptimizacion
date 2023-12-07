@@ -49,7 +49,7 @@ if button__runge_3:
     st.write(od.rungeKutta3(init_i, init_v, t_range))
 
 if button__runge_4:
-    st.markdown("<h2>Runge Kutta Orden 3</h2>", unsafe_allow_html=True)
+    st.markdown("<h2>Runge Kutta Orden 4</h2>", unsafe_allow_html=True)
     st.write(od.rungeKutta4(init_i, init_v, t_range, r, c, i, v))
 
 if button__predator:
