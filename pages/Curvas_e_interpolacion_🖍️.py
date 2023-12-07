@@ -2,7 +2,6 @@ import streamlit as st
 import methods.curvesInterpolation as cI
 
 st.markdown("<h1 style='text-align: center'>Ajuste de Curvas e Interpolación 🖍️</h1>", unsafe_allow_html=True)
-# st.markdown("<h2>Parámetros</h2>", unsafe_allow_html=True)
 st.divider()
 data_file = st.sidebar.file_uploader("Cargar archivo CSV", type=['csv'])
 
