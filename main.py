@@ -2,7 +2,7 @@ import streamlit as st
 import os
 
 # st.set_page_config(layout="wide")
-ruta_absoluta = 'https://drive.google.com/file/d/1TFQ7sWDtmNEZczI3bL8ODM5SbiOUufKG/view?usp=sharing'
+ruta_absoluta = 'https://drive.google.com/file/d/1vT-Ee-iVC0bVJGzEyidpgb_DNo1__Ri1/view?usp=sharing'
 # ruta_absoluta = os.path.abspath('./src/files/manual_usuario_pt.pdf')
 
 st.markdown("<h1 style='text-align: center;'>Métodos Numéricos y Optimización 🤘💥</h1>", unsafe_allow_html=True)
